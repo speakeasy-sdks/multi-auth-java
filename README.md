@@ -12,7 +12,7 @@
 ### Gradle
 
 ```groovy
-implementation 'com.example.MultipleAuthTester:MultipleAuthTester:0.1.0'
+implementation 'com.example.MultipleAuthTester:MultipleAuthTester:0.1.1'
 ```
 <!-- End SDK Installation -->
 
@@ -60,7 +60,7 @@ public class Application {
 ## Available Resources and Operations
 
 
-### [cars](docs/sdks/cars/README.md)
+### [Cars](docs/sdks/cars/README.md)
 
 * [getCarsByCNIC](docs/sdks/cars/README.md#getcarsbycnic) - Find cars by CNIC
 * [getCarsById](docs/sdks/cars/README.md#getcarsbyid) - Find cars by ID
