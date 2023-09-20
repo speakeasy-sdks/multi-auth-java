@@ -12,7 +12,7 @@
 ### Gradle
 
 ```groovy
-implementation 'com.example.MultipleAuthTester:MultipleAuthTester:0.1.1'
+implementation 'com.example.MultipleAuthTester:MultipleAuthTester:0.1.2'
 ```
 <!-- End SDK Installation -->
 
