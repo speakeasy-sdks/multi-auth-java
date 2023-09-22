@@ -12,14 +12,12 @@
 ### Gradle
 
 ```groovy
-implementation 'com.example.MultipleAuthTester:MultipleAuthTester:0.1.2'
+implementation 'com.example.MultipleAuthTester:MultipleAuthTester:0.2.0'
 ```
 <!-- End SDK Installation -->
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```java
 package hello.world;
 
@@ -32,16 +30,16 @@ public class Application {
     public static void main(String[] args) {
         try {
             MultipleAuthTester sdk = MultipleAuthTester.builder()
-                .setSecurity(new Security("distinctio",                 new SchemeHTTPBasic("quibusdam", "unde");) {{
+                .setSecurity(new Security("vel",                 new SchemeHTTPBasic("error", "deserunt");) {{
                     apiKey = "";
-                    httpBasic = new SchemeHTTPBasic("corrupti", "provident") {{
+                    httpBasic = new SchemeHTTPBasic("corrupti", "illum") {{
                         password = "";
                         username = "";
                     }};
                 }})
                 .build();
 
-            GetCarsByCNICRequest req = new GetCarsByCNICRequest("nulla");            
+            GetCarsByCNICRequest req = new GetCarsByCNICRequest("suscipit");            
 
             GetCarsByCNICResponse res = sdk.cars.getCarsByCNIC(req);
 
@@ -66,6 +64,18 @@ public class Application {
 * [getCarsById](docs/sdks/cars/README.md#getcarsbyid) - Find cars by ID
 * [getCarsByName](docs/sdks/cars/README.md#getcarsbyname) - Find cars by Name
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 
