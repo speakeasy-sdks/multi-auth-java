@@ -12,7 +12,7 @@
 ### Gradle
 
 ```groovy
-implementation 'com.example.MultipleAuthTester:MultipleAuthTester:0.2.0'
+implementation 'com.example.MultipleAuthTester:MultipleAuthTester:0.3.0'
 ```
 <!-- End SDK Installation -->
 
@@ -68,8 +68,6 @@ public class Application {
 
 
 <!-- Start Dev Containers -->
-
-
 
 <!-- End Dev Containers -->
 
