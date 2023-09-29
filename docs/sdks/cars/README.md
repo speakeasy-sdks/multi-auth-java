@@ -29,16 +29,16 @@ public class Application {
     public static void main(String[] args) {
         try {
             MultipleAuthTester sdk = MultipleAuthTester.builder()
-                .setSecurity(new Security("debitis",                 new SchemeHTTPBasic("ipsa", "delectus");) {{
+                .setSecurity(new Security("Toyota",                 new SchemeHTTPBasic("Diesel", "Screen");) {{
                     apiKey = "";
-                    httpBasic = new SchemeHTTPBasic("iure", "magnam") {{
+                    httpBasic = new SchemeHTTPBasic("Account", "Maryland") {{
                         password = "";
                         username = "";
                     }};
                 }})
                 .build();
 
-            GetCarsByCNICRequest req = new GetCarsByCNICRequest("tempora");            
+            GetCarsByCNICRequest req = new GetCarsByCNICRequest("JSON");            
 
             GetCarsByCNICResponse res = sdk.cars.getCarsByCNIC(req);
 
@@ -86,7 +86,7 @@ public class Application {
             MultipleAuthTester sdk = MultipleAuthTester.builder()
                 .build();
 
-            GetCarsByIdRequest req = new GetCarsByIdRequest(383441L);            
+            GetCarsByIdRequest req = new GetCarsByIdRequest(174472L);            
 
             GetCarsByIdResponse res = sdk.cars.getCarsById(req, new GetCarsByIdSecurity() {{
                 apiKey = "";
@@ -137,11 +137,11 @@ public class Application {
             MultipleAuthTester sdk = MultipleAuthTester.builder()
                 .build();
 
-            GetCarsByNameRequest req = new GetCarsByNameRequest("molestiae");            
+            GetCarsByNameRequest req = new GetCarsByNameRequest("array");            
 
-            GetCarsByNameResponse res = sdk.cars.getCarsByName(req, new GetCarsByNameSecurity("voluptatum",                 new SchemeHTTPBasic("iusto", "excepturi");) {{
+            GetCarsByNameResponse res = sdk.cars.getCarsByName(req, new GetCarsByNameSecurity("Steel",                 new SchemeHTTPBasic("Computers", "Borders");) {{
                 apiKeyHeader = "";
-                httpBasic = new SchemeHTTPBasic("minus", "placeat") {{
+                httpBasic = new SchemeHTTPBasic("Data", "optical") {{
                     password = "";
                     username = "";
                 }};

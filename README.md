@@ -12,7 +12,7 @@
 ### Gradle
 
 ```groovy
-implementation 'com.example.MultipleAuthTester:MultipleAuthTester:0.3.1'
+implementation 'com.example.MultipleAuthTester:MultipleAuthTester:0.4.0'
 ```
 <!-- End SDK Installation -->
 
@@ -30,16 +30,16 @@ public class Application {
     public static void main(String[] args) {
         try {
             MultipleAuthTester sdk = MultipleAuthTester.builder()
-                .setSecurity(new Security("vel",                 new SchemeHTTPBasic("error", "deserunt");) {{
+                .setSecurity(new Security("Toyota",                 new SchemeHTTPBasic("Diesel", "Screen");) {{
                     apiKey = "";
-                    httpBasic = new SchemeHTTPBasic("corrupti", "illum") {{
+                    httpBasic = new SchemeHTTPBasic("Account", "Maryland") {{
                         password = "";
                         username = "";
                     }};
                 }})
                 .build();
 
-            GetCarsByCNICRequest req = new GetCarsByCNICRequest("suscipit");            
+            GetCarsByCNICRequest req = new GetCarsByCNICRequest("JSON");            
 
             GetCarsByCNICResponse res = sdk.cars.getCarsByCNIC(req);
 

@@ -13,16 +13,16 @@ public class Application {
     public static void main(String[] args) {
         try {
             MultipleAuthTester sdk = MultipleAuthTester.builder()
-                .setSecurity(new Security("distinctio",                 new SchemeHTTPBasic("quibusdam", "unde");) {{
+                .setSecurity(new Security("Toyota",                 new SchemeHTTPBasic("Diesel", "Screen");) {{
                     apiKey = "";
-                    httpBasic = new SchemeHTTPBasic("corrupti", "provident") {{
+                    httpBasic = new SchemeHTTPBasic("Account", "Maryland") {{
                         password = "";
                         username = "";
                     }};
                 }})
                 .build();
 
-            GetCarsByCNICRequest req = new GetCarsByCNICRequest("nulla");            
+            GetCarsByCNICRequest req = new GetCarsByCNICRequest("JSON");            
 
             GetCarsByCNICResponse res = sdk.cars.getCarsByCNIC(req);
 
