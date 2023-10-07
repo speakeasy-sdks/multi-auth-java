@@ -29,9 +29,9 @@ public class Application {
     public static void main(String[] args) {
         try {
             MultipleAuthTester sdk = MultipleAuthTester.builder()
-                .setSecurity(new Security("Toyota",                 new SchemeHTTPBasic("Diesel", "Screen");) {{
+                .setSecurity(new Security("Toyota", new SchemeHTTPBasic("Diesel", "Screen")){{
                     apiKey = "";
-                    httpBasic = new SchemeHTTPBasic("Account", "Maryland") {{
+                    httpBasic = new SchemeHTTPBasic("Account", "Maryland"){{
                         password = "";
                         username = "";
                     }};
@@ -88,7 +88,7 @@ public class Application {
 
             GetCarsByIdRequest req = new GetCarsByIdRequest(174472L);            
 
-            GetCarsByIdResponse res = sdk.cars.getCarsById(req, new GetCarsByIdSecurity() {{
+            GetCarsByIdResponse res = sdk.cars.getCarsById(req, new GetCarsByIdSecurity(){{
                 apiKey = "";
             }});
 
@@ -139,9 +139,9 @@ public class Application {
 
             GetCarsByNameRequest req = new GetCarsByNameRequest("array");            
 
-            GetCarsByNameResponse res = sdk.cars.getCarsByName(req, new GetCarsByNameSecurity("Steel",                 new SchemeHTTPBasic("Computers", "Borders");) {{
+            GetCarsByNameResponse res = sdk.cars.getCarsByName(req, new GetCarsByNameSecurity("Steel", new SchemeHTTPBasic("Computers", "Borders")){{
                 apiKeyHeader = "";
-                httpBasic = new SchemeHTTPBasic("Data", "optical") {{
+                httpBasic = new SchemeHTTPBasic("Data", "optical"){{
                     password = "";
                     username = "";
                 }};
