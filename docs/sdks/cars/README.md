@@ -29,16 +29,16 @@ public class Application {
     public static void main(String[] args) {
         try {
             MultipleAuthTester sdk = MultipleAuthTester.builder()
-                .setSecurity(new Security("Toyota", new SchemeHTTPBasic("Diesel", "Screen")){{
+                .setSecurity(new Security("string", new SchemeHTTPBasic("string", "string")){{
                     apiKey = "";
-                    httpBasic = new SchemeHTTPBasic("Account", "Maryland"){{
+                    httpBasic = new SchemeHTTPBasic("string", "string"){{
                         password = "";
                         username = "";
                     }};
                 }})
                 .build();
 
-            GetCarsByCNICRequest req = new GetCarsByCNICRequest("JSON");            
+            GetCarsByCNICRequest req = new GetCarsByCNICRequest("string");            
 
             GetCarsByCNICResponse res = sdk.cars.getCarsByCNIC(req);
 
@@ -137,11 +137,11 @@ public class Application {
             MultipleAuthTester sdk = MultipleAuthTester.builder()
                 .build();
 
-            GetCarsByNameRequest req = new GetCarsByNameRequest("array");            
+            GetCarsByNameRequest req = new GetCarsByNameRequest("string");            
 
-            GetCarsByNameResponse res = sdk.cars.getCarsByName(req, new GetCarsByNameSecurity("Steel", new SchemeHTTPBasic("Computers", "Borders")){{
+            GetCarsByNameResponse res = sdk.cars.getCarsByName(req, new GetCarsByNameSecurity("string", new SchemeHTTPBasic("string", "string")){{
                 apiKeyHeader = "";
-                httpBasic = new SchemeHTTPBasic("Data", "optical"){{
+                httpBasic = new SchemeHTTPBasic("string", "string"){{
                     password = "";
                     username = "";
                 }};
