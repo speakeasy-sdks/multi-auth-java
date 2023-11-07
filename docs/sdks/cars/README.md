@@ -1,5 +1,5 @@
 # Cars
-(*cars*)
+(*.cars*)
 
 ## Overview
 
@@ -42,7 +42,7 @@ public class Application {
 
             GetCarsByCNICResponse res = sdk.cars.getCarsByCNIC(req);
 
-            if (res.cars != null) {
+            if (res.classes != null) {
                 // handle response
             }
         } catch (Exception e) {
@@ -92,7 +92,7 @@ public class Application {
                 apiKey = "";
             }});
 
-            if (res.cars != null) {
+            if (res.classes != null) {
                 // handle response
             }
         } catch (Exception e) {
@@ -147,7 +147,7 @@ public class Application {
                 }};
             }});
 
-            if (res.cars != null) {
+            if (res.classes != null) {
                 // handle response
             }
         } catch (Exception e) {

@@ -10,17 +10,6 @@ import java.net.http.HttpResponse;
 
 public class GetCarsByNameResponse {
     /**
-     * car response
-     */
-    
-    public com.example.MultipleAuthTester.models.shared.Car[] cars;
-
-    public GetCarsByNameResponse withCars(com.example.MultipleAuthTester.models.shared.Car[] cars) {
-        this.cars = cars;
-        return this;
-    }
-    
-    /**
      * HTTP response content type for this operation
      */
     
@@ -61,6 +50,17 @@ public class GetCarsByNameResponse {
 
     public GetCarsByNameResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
+        return this;
+    }
+    
+    /**
+     * car response
+     */
+    
+    public com.example.MultipleAuthTester.models.shared.Car[] classes;
+
+    public GetCarsByNameResponse withClasses(com.example.MultipleAuthTester.models.shared.Car[] classes) {
+        this.classes = classes;
         return this;
     }
     

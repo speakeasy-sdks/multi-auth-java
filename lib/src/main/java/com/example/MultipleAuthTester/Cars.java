@@ -47,7 +47,7 @@ public class Cars {
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
         com.example.MultipleAuthTester.models.operations.GetCarsByCNICResponse res = new com.example.MultipleAuthTester.models.operations.GetCarsByCNICResponse(contentType, httpRes.statusCode()) {{
-            cars = null;
+            classes = null;
             errorModel = null;
         }};
         res.rawResponse = httpRes;
@@ -56,7 +56,7 @@ public class Cars {
             if (com.example.MultipleAuthTester.utils.Utils.matchContentType(contentType, "application/json")) {
                 ObjectMapper mapper = JSON.getMapper();
                 com.example.MultipleAuthTester.models.shared.Car[] out = mapper.readValue(new String(httpRes.body(), StandardCharsets.UTF_8), com.example.MultipleAuthTester.models.shared.Car[].class);
-                res.cars = out;
+                res.classes = out;
             }
         }
         else {
@@ -96,7 +96,7 @@ public class Cars {
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
         com.example.MultipleAuthTester.models.operations.GetCarsByIdResponse res = new com.example.MultipleAuthTester.models.operations.GetCarsByIdResponse(contentType, httpRes.statusCode()) {{
-            cars = null;
+            classes = null;
             errorModel = null;
         }};
         res.rawResponse = httpRes;
@@ -105,7 +105,7 @@ public class Cars {
             if (com.example.MultipleAuthTester.utils.Utils.matchContentType(contentType, "application/json")) {
                 ObjectMapper mapper = JSON.getMapper();
                 com.example.MultipleAuthTester.models.shared.Car[] out = mapper.readValue(new String(httpRes.body(), StandardCharsets.UTF_8), com.example.MultipleAuthTester.models.shared.Car[].class);
-                res.cars = out;
+                res.classes = out;
             }
         }
         else {
@@ -145,7 +145,7 @@ public class Cars {
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
         com.example.MultipleAuthTester.models.operations.GetCarsByNameResponse res = new com.example.MultipleAuthTester.models.operations.GetCarsByNameResponse(contentType, httpRes.statusCode()) {{
-            cars = null;
+            classes = null;
             errorModel = null;
         }};
         res.rawResponse = httpRes;
@@ -154,7 +154,7 @@ public class Cars {
             if (com.example.MultipleAuthTester.utils.Utils.matchContentType(contentType, "application/json")) {
                 ObjectMapper mapper = JSON.getMapper();
                 com.example.MultipleAuthTester.models.shared.Car[] out = mapper.readValue(new String(httpRes.body(), StandardCharsets.UTF_8), com.example.MultipleAuthTester.models.shared.Car[].class);
-                res.cars = out;
+                res.classes = out;
             }
         }
         else {

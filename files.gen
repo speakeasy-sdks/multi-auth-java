@@ -38,8 +38,8 @@ lib/src/main/java/com/example/MultipleAuthTester/models/operations/GetCarsByIdRe
 lib/src/main/java/com/example/MultipleAuthTester/models/operations/GetCarsByNameSecurity.java
 lib/src/main/java/com/example/MultipleAuthTester/models/operations/GetCarsByNameRequest.java
 lib/src/main/java/com/example/MultipleAuthTester/models/operations/GetCarsByNameResponse.java
-lib/src/main/java/com/example/MultipleAuthTester/models/shared/ErrorModel.java
 lib/src/main/java/com/example/MultipleAuthTester/models/shared/Car.java
+lib/src/main/java/com/example/MultipleAuthTester/models/shared/ErrorModel.java
 lib/src/main/java/com/example/MultipleAuthTester/models/shared/SchemeHTTPBasic.java
 lib/src/main/java/com/example/MultipleAuthTester/models/shared/Security.java
 USAGE.md
@@ -51,8 +51,8 @@ docs/models/operations/GetCarsByIdResponse.md
 docs/models/operations/GetCarsByNameSecurity.md
 docs/models/operations/GetCarsByNameRequest.md
 docs/models/operations/GetCarsByNameResponse.md
-docs/models/shared/ErrorModel.md
 docs/models/shared/Car.md
+docs/models/shared/ErrorModel.md
 docs/models/shared/SchemeHTTPBasic.md
 docs/models/shared/Security.md
 docs/sdks/multipleauthtester/README.md
