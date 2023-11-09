@@ -1,5 +1,5 @@
 # Cars
-(*.cars*)
+(*cars*)
 
 ## Overview
 
