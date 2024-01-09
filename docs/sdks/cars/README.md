@@ -29,18 +29,25 @@ public class Application {
     public static void main(String[] args) {
         try {
             MultipleAuthTester sdk = MultipleAuthTester.builder()
-                .setSecurity(new Security("string", new SchemeHTTPBasic("string", "string")){{
-                    apiKey = "";
-                    httpBasic = new SchemeHTTPBasic("string", "string"){{
-                        password = "";
-                        username = "";
+                .setSecurity(new Security(
+                "string",
+                new SchemeHTTPBasic(
+                "string",
+                "string")){{
+                    apiKey = "<YOUR_API_KEY_HERE>";
+                    httpBasic = new SchemeHTTPBasic(
+                    "string",
+                    "string"){{
+                        password = "<YOUR_PASSWORD_HERE>";
+                        username = "<YOUR_USERNAME_HERE>";
                     }};
                 }})
                 .build();
 
-            GetCarsByCNICRequest req = new GetCarsByCNICRequest("string");            
+            com.example.MultipleAuthTester.models.operations.GetCarsByCNICRequest req = new GetCarsByCNICRequest(
+                "string");
 
-            GetCarsByCNICResponse res = sdk.cars.getCarsByCNIC(req);
+            com.example.MultipleAuthTester.models.operations.GetCarsByCNICResponse res = sdk.cars.getCarsByCNIC(req);
 
             if (res.classes != null) {
                 // handle response
@@ -83,13 +90,14 @@ import com.example.MultipleAuthTester.models.shared.Security;
 public class Application {
     public static void main(String[] args) {
         try {
-            MultipleAuthTester sdk = MultipleAuthTester.builder()
-                .build();
+            MultipleAuthTester sdk = MultipleAuthTester.builder()            .build();
 
-            GetCarsByIdRequest req = new GetCarsByIdRequest(174472L);            
+            com.example.MultipleAuthTester.models.operations.GetCarsByIdRequest req = new GetCarsByIdRequest(
+                174472L);
 
-            GetCarsByIdResponse res = sdk.cars.getCarsById(req, new GetCarsByIdSecurity(){{
-                apiKey = "";
+            com.example.MultipleAuthTester.models.operations.GetCarsByIdResponse res = sdk.cars.getCarsById(req, new GetCarsByIdSecurity(
+            ){{
+                apiKey = "<YOUR_API_KEY_HERE>";
             }});
 
             if (res.classes != null) {
@@ -134,16 +142,22 @@ import com.example.MultipleAuthTester.models.shared.Security;
 public class Application {
     public static void main(String[] args) {
         try {
-            MultipleAuthTester sdk = MultipleAuthTester.builder()
-                .build();
+            MultipleAuthTester sdk = MultipleAuthTester.builder()            .build();
 
-            GetCarsByNameRequest req = new GetCarsByNameRequest("string");            
+            com.example.MultipleAuthTester.models.operations.GetCarsByNameRequest req = new GetCarsByNameRequest(
+                "string");
 
-            GetCarsByNameResponse res = sdk.cars.getCarsByName(req, new GetCarsByNameSecurity("string", new SchemeHTTPBasic("string", "string")){{
-                apiKeyHeader = "";
-                httpBasic = new SchemeHTTPBasic("string", "string"){{
-                    password = "";
-                    username = "";
+            com.example.MultipleAuthTester.models.operations.GetCarsByNameResponse res = sdk.cars.getCarsByName(req, new GetCarsByNameSecurity(
+            "string",
+            new SchemeHTTPBasic(
+            "string",
+            "string")){{
+                apiKeyHeader = "<YOUR_API_KEY_HERE>";
+                httpBasic = new SchemeHTTPBasic(
+                "string",
+                "string"){{
+                    password = "<YOUR_PASSWORD_HERE>";
+                    username = "<YOUR_USERNAME_HERE>";
                 }};
             }});
 

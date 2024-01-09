@@ -45,12 +45,11 @@ public class Cars {
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
-
-        com.example.MultipleAuthTester.models.operations.GetCarsByCNICResponse res = new com.example.MultipleAuthTester.models.operations.GetCarsByCNICResponse(contentType, httpRes.statusCode()) {{
+        
+        com.example.MultipleAuthTester.models.operations.GetCarsByCNICResponse res = new com.example.MultipleAuthTester.models.operations.GetCarsByCNICResponse(contentType, httpRes.statusCode(), httpRes) {{
             classes = null;
             errorModel = null;
         }};
-        res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {
             if (com.example.MultipleAuthTester.utils.Utils.matchContentType(contentType, "application/json")) {
@@ -94,12 +93,11 @@ public class Cars {
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
-
-        com.example.MultipleAuthTester.models.operations.GetCarsByIdResponse res = new com.example.MultipleAuthTester.models.operations.GetCarsByIdResponse(contentType, httpRes.statusCode()) {{
+        
+        com.example.MultipleAuthTester.models.operations.GetCarsByIdResponse res = new com.example.MultipleAuthTester.models.operations.GetCarsByIdResponse(contentType, httpRes.statusCode(), httpRes) {{
             classes = null;
             errorModel = null;
         }};
-        res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {
             if (com.example.MultipleAuthTester.utils.Utils.matchContentType(contentType, "application/json")) {
@@ -143,12 +141,11 @@ public class Cars {
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
-
-        com.example.MultipleAuthTester.models.operations.GetCarsByNameResponse res = new com.example.MultipleAuthTester.models.operations.GetCarsByNameResponse(contentType, httpRes.statusCode()) {{
+        
+        com.example.MultipleAuthTester.models.operations.GetCarsByNameResponse res = new com.example.MultipleAuthTester.models.operations.GetCarsByNameResponse(contentType, httpRes.statusCode(), httpRes) {{
             classes = null;
             errorModel = null;
         }};
-        res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {
             if (com.example.MultipleAuthTester.utils.Utils.matchContentType(contentType, "application/json")) {

@@ -1,6 +1,4 @@
-<!-- Start SDK Example Usage -->
-
-
+<!-- Start SDK Example Usage [usage] -->
 ```java
 package hello.world;
 
@@ -13,18 +11,25 @@ public class Application {
     public static void main(String[] args) {
         try {
             MultipleAuthTester sdk = MultipleAuthTester.builder()
-                .setSecurity(new Security("string", new SchemeHTTPBasic("string", "string")){{
-                    apiKey = "";
-                    httpBasic = new SchemeHTTPBasic("string", "string"){{
-                        password = "";
-                        username = "";
+                .setSecurity(new Security(
+                "string",
+                new SchemeHTTPBasic(
+                "string",
+                "string")){{
+                    apiKey = "<YOUR_API_KEY_HERE>";
+                    httpBasic = new SchemeHTTPBasic(
+                    "string",
+                    "string"){{
+                        password = "<YOUR_PASSWORD_HERE>";
+                        username = "<YOUR_USERNAME_HERE>";
                     }};
                 }})
                 .build();
 
-            GetCarsByCNICRequest req = new GetCarsByCNICRequest("string");            
+            com.example.MultipleAuthTester.models.operations.GetCarsByCNICRequest req = new GetCarsByCNICRequest(
+                "string");
 
-            GetCarsByCNICResponse res = sdk.cars.getCarsByCNIC(req);
+            com.example.MultipleAuthTester.models.operations.GetCarsByCNICResponse res = sdk.cars.getCarsByCNIC(req);
 
             if (res.classes != null) {
                 // handle response
@@ -35,4 +40,4 @@ public class Application {
     }
 }
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->

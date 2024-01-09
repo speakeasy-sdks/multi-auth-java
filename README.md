@@ -6,18 +6,21 @@
     
 </div>
 
-<!-- Start SDK Installation -->
+<!-- Start SDK Installation [installation] -->
 ## SDK Installation
 
 ### Gradle
 
 ```groovy
-implementation 'com.example.MultipleAuthTester:MultipleAuthTester:0.10.1'
+implementation 'com.example.MultipleAuthTester:MultipleAuthTester:0.11.0'
 ```
-<!-- End SDK Installation -->
+<!-- End SDK Installation [installation] -->
 
+<!-- Start SDK Example Usage [usage] -->
 ## SDK Example Usage
-<!-- Start SDK Example Usage -->
+
+### Example
+
 ```java
 package hello.world;
 
@@ -30,18 +33,25 @@ public class Application {
     public static void main(String[] args) {
         try {
             MultipleAuthTester sdk = MultipleAuthTester.builder()
-                .setSecurity(new Security("string", new SchemeHTTPBasic("string", "string")){{
-                    apiKey = "";
-                    httpBasic = new SchemeHTTPBasic("string", "string"){{
-                        password = "";
-                        username = "";
+                .setSecurity(new Security(
+                "string",
+                new SchemeHTTPBasic(
+                "string",
+                "string")){{
+                    apiKey = "<YOUR_API_KEY_HERE>";
+                    httpBasic = new SchemeHTTPBasic(
+                    "string",
+                    "string"){{
+                        password = "<YOUR_PASSWORD_HERE>";
+                        username = "<YOUR_USERNAME_HERE>";
                     }};
                 }})
                 .build();
 
-            GetCarsByCNICRequest req = new GetCarsByCNICRequest("string");            
+            com.example.MultipleAuthTester.models.operations.GetCarsByCNICRequest req = new GetCarsByCNICRequest(
+                "string");
 
-            GetCarsByCNICResponse res = sdk.cars.getCarsByCNIC(req);
+            com.example.MultipleAuthTester.models.operations.GetCarsByCNICResponse res = sdk.cars.getCarsByCNIC(req);
 
             if (res.classes != null) {
                 // handle response
@@ -52,24 +62,42 @@ public class Application {
     }
 }
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->
 
-<!-- Start SDK Available Operations -->
+<!-- Start Available Resources and Operations [operations] -->
 ## Available Resources and Operations
-
 
 ### [cars](docs/sdks/cars/README.md)
 
 * [getCarsByCNIC](docs/sdks/cars/README.md#getcarsbycnic) - Find cars by CNIC
 * [getCarsById](docs/sdks/cars/README.md#getcarsbyid) - Find cars by ID
 * [getCarsByName](docs/sdks/cars/README.md#getcarsbyname) - Find cars by Name
-<!-- End SDK Available Operations -->
+<!-- End Available Resources and Operations [operations] -->
 
 
 
-<!-- Start Dev Containers -->
+<!-- Start Server Selection [server] -->
+## Server Selection
 
-<!-- End Dev Containers -->
+## Server Selection
+
+### Select Server by Index
+
+You can override the default server globally using the `setServerIndex` option when initializing the SDK client instance. The selected server will then be used as the default on the operations that use it. This table lists the indexes associated with the available servers:
+
+| # | Server | Variables |
+| - | ------ | --------- |
+| 0 | `https://development.gigantic-server.com/v1` | None |
+| 1 | `https://staging.gigantic-server.com/v1` | None |
+| 2 | `https://api.gigantic-server.com/v1` | None |
+
+
+
+
+### Override Server URL Per-Client
+
+The default server can also be overridden globally using the `setServerURL` option when initializing the SDK client instance. For example:
+<!-- End Server Selection [server] -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
 
