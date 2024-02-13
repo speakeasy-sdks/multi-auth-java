@@ -4,9 +4,9 @@ management:
   docChecksum: 80f3394dfe48f9663121e6a03f027f48
   docVersion: 1.0.1
   speakeasyVersion: internal
-  generationVersion: 2.230.1
-  releaseVersion: 0.11.0
-  configChecksum: a241006e2892cd93c89668bcdda65a3c
+  generationVersion: 2.253.0
+  releaseVersion: 0.11.1
+  configChecksum: a2efbceade460f4735ba9afc22f78393
   repoURL: https://github.com/speakeasy-sdks/multi-auth-java.git
   repoSubDirectory: .
   published: true

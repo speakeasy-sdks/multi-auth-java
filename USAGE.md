@@ -14,12 +14,12 @@ public class Application {
                 .setSecurity(new Security(
                 "string",
                 new SchemeHTTPBasic(
-                "string",
-                "string")){{
+                "",
+                "")){{
                     apiKey = "<YOUR_API_KEY_HERE>";
                     httpBasic = new SchemeHTTPBasic(
-                    "string",
-                    "string"){{
+                    "",
+                    ""){{
                         password = "<YOUR_PASSWORD_HERE>";
                         username = "<YOUR_USERNAME_HERE>";
                     }};

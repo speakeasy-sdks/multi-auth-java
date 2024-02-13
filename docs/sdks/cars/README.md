@@ -32,12 +32,12 @@ public class Application {
                 .setSecurity(new Security(
                 "string",
                 new SchemeHTTPBasic(
-                "string",
-                "string")){{
+                "",
+                "")){{
                     apiKey = "<YOUR_API_KEY_HERE>";
                     httpBasic = new SchemeHTTPBasic(
-                    "string",
-                    "string"){{
+                    "",
+                    ""){{
                         password = "<YOUR_PASSWORD_HERE>";
                         username = "<YOUR_USERNAME_HERE>";
                     }};
@@ -150,12 +150,12 @@ public class Application {
             com.example.MultipleAuthTester.models.operations.GetCarsByNameResponse res = sdk.cars.getCarsByName(req, new GetCarsByNameSecurity(
             "string",
             new SchemeHTTPBasic(
-            "string",
-            "string")){{
+            "",
+            "")){{
                 apiKeyHeader = "<YOUR_API_KEY_HERE>";
                 httpBasic = new SchemeHTTPBasic(
-                "string",
-                "string"){{
+                "",
+                ""){{
                     password = "<YOUR_PASSWORD_HERE>";
                     username = "<YOUR_USERNAME_HERE>";
                 }};
