@@ -4,15 +4,15 @@ management:
   docChecksum: 80f3394dfe48f9663121e6a03f027f48
   docVersion: 1.0.1
   speakeasyVersion: internal
-  generationVersion: 2.253.0
-  releaseVersion: 0.11.1
-  configChecksum: a2efbceade460f4735ba9afc22f78393
+  generationVersion: 2.258.0
+  releaseVersion: 0.12.0
+  configChecksum: 7851efd9598e0ad9c4fafc67ea30348d
   repoURL: https://github.com/speakeasy-sdks/multi-auth-java.git
   repoSubDirectory: .
   published: true
 features:
   java:
-    core: 3.2.2
+    core: 3.5.0
     globalSecurity: 2.81.2
     globalServerURLs: 2.82.1
     methodSecurity: 2.82.0
@@ -25,6 +25,7 @@ generatedFiles:
   - gradle/wrapper/gradle-wrapper.properties
   - gradlew
   - gradlew.bat
+  - settings.gradle
   - lib/build.gradle
   - lib/src/main/java/com/example/MultipleAuthTester/utils/DateTimeDeserializer.java
   - lib/src/main/java/com/example/MultipleAuthTester/utils/DateTimeSerializer.java
@@ -48,7 +49,6 @@ generatedFiles:
   - lib/src/main/java/com/example/MultipleAuthTester/utils/SpeakeasyMetadata.java
   - lib/src/main/java/com/example/MultipleAuthTester/utils/Types.java
   - lib/src/main/java/com/example/MultipleAuthTester/utils/Utils.java
-  - settings.gradle
   - lib/src/main/java/com/example/MultipleAuthTester/models/operations/GetCarsByCNICRequest.java
   - lib/src/main/java/com/example/MultipleAuthTester/models/operations/GetCarsByCNICResponse.java
   - lib/src/main/java/com/example/MultipleAuthTester/models/operations/GetCarsByIdSecurity.java

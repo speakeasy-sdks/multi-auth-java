@@ -30,7 +30,7 @@ public class Application {
         try {
             MultipleAuthTester sdk = MultipleAuthTester.builder()
                 .setSecurity(new Security(
-                "string",
+                "<value>",
                 new SchemeHTTPBasic(
                 "",
                 "")){{
@@ -45,7 +45,7 @@ public class Application {
                 .build();
 
             com.example.MultipleAuthTester.models.operations.GetCarsByCNICRequest req = new GetCarsByCNICRequest(
-                "string");
+                "<value>");
 
             com.example.MultipleAuthTester.models.operations.GetCarsByCNICResponse res = sdk.cars.getCarsByCNIC(req);
 
@@ -145,10 +145,10 @@ public class Application {
             MultipleAuthTester sdk = MultipleAuthTester.builder()            .build();
 
             com.example.MultipleAuthTester.models.operations.GetCarsByNameRequest req = new GetCarsByNameRequest(
-                "string");
+                "<value>");
 
             com.example.MultipleAuthTester.models.operations.GetCarsByNameResponse res = sdk.cars.getCarsByName(req, new GetCarsByNameSecurity(
-            "string",
+            "<value>",
             new SchemeHTTPBasic(
             "",
             "")){{

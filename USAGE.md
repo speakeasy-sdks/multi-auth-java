@@ -12,7 +12,7 @@ public class Application {
         try {
             MultipleAuthTester sdk = MultipleAuthTester.builder()
                 .setSecurity(new Security(
-                "string",
+                "<value>",
                 new SchemeHTTPBasic(
                 "",
                 "")){{
@@ -27,7 +27,7 @@ public class Application {
                 .build();
 
             com.example.MultipleAuthTester.models.operations.GetCarsByCNICRequest req = new GetCarsByCNICRequest(
-                "string");
+                "<value>");
 
             com.example.MultipleAuthTester.models.operations.GetCarsByCNICResponse res = sdk.cars.getCarsByCNIC(req);
 
